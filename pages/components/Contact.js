@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Router from "next/router";
 import axios from "axios";
-import { data } from "autoprefixer";
 
 const Contact = ({ setThank, setPhone, phone }) => {
   // const [inputs, setInputs] = useState([])
@@ -15,46 +14,27 @@ const Contact = ({ setThank, setPhone, phone }) => {
   // }
 
   const handleSubmit = () => {
-    // e.preventDefault()
+    axios.get(
+      `https://josmsservice.com/SMSServices/Clients/Prof/RestSingleSMS/SendSMS?senderid=iSystem&numbers=9627${phone}&accname=isystem1&AccPass=xW8@zF6@wB2@xF1fT2n&msg=SMSBODY`,
+      ).then((res)=>{
+        console.log(res)
+      }).then(()=>{
+      })
+      .catch((err)=>{
+        console.log(err)
+      })
+
+
     setThank(true);
+
   };
 
   const handleChange = (e) => {
     setPhone(e.target.value);
   };
 
-  useEffect(() => {
-    axios.post(
-        `https://josmsservice.com/SMSServices/Clients/Prof/RestSingleSMS/SendSMS?senderid=iSystem&numbers=962777363354&accname=isystem1&AccPass=xW8@zF6@wB2@xF1fT2n&msg=SMSBODY`,
 
-        ).then((res)=>{
-          console.log(res)
-        }).catch((err)=>{
-          console.log(err)
-        })
-      }, []);
 
-  // async function postData(url = 'https://josmsservice.com/SMSServices/Clients/Prof/RestSingleSMS/SendSMS?senderid=iSystem&numbers=962777363354&accname=isystem1&AccPass=xW8@zF6@wB2@xF1fT2n&msg=SMSBODY') {
-  //   // Default options are marked with *
-  //   const response = await fetch(url, {
-  //     method: 'POST', // *GET, POST, PUT, DELETE, etc.
-  //     mode: 'cors', // no-cors, *cors, same-origin
-  //     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-  //     credentials: 'same-origin', // include, *same-origin, omit
-  //     headers: {
-  //       'Content-Type': 'application/json'
-        
-  //       // 'Content-Type': 'application/x-www-form-urlencoded',
-  //     },
-   
-  //     referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-  //     body: JSON.stringify(data) // body data type must match "Content-Type" header
-  //   });
-  //   return response.json(); // parses JSON response into native JavaScript objects
-  // }
-  
-  // postData('https://josmsservice.com/SMSServices/Clients/Prof/RestSingleSMS/SendSMS?senderid=iSystem&numbers=962777363354&accname=isystem1&AccPass=xW8@zF6@wB2@xF1fT2n&msg=SMSBODY')
-  //    // JSON data parsed by `data.json()` call
 
   return (
     <div className="m-20 rounded-lg bg-white/20">
