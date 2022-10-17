@@ -25,11 +25,13 @@ const Contact = ({ setThank, setPhone, phone }) => {
 
   useEffect(() => {
     axios.post(
-        `https://josmsservice.com/SMSServices/Clients/Prof/RestSingleSMS/SendSMS?senderid=iSystem&numbers=9627${phone}&accname=isystem1&AccPass=xW8@zF6@wB2@xF1fT2n&msg=SMSBODY` 
+        `https://josmsservice.com/SMSServices/Clients/Prof/RestSingleSMS/SendSMS?senderid=iSystem&numbers=962777363354&accname=isystem1&AccPass=xW8@zF6@wB2@xF1fT2n&msg=SMSBODY` 
         
 
         ).then((res)=>{
           console.log(res)
+        }).catch((err)=>{
+          console.log(err)
         })
       }, []);
 
