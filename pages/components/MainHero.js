@@ -1,6 +1,9 @@
 import React from "react";
 import Contact from "./Contact";
 import { useState } from "react";
+import products from '../../public/products.webp'
+import Image from "next/image";
+
 
 const Hero = () => {
   const [thank, setThank] = useState(false);
@@ -12,14 +15,14 @@ const Hero = () => {
     <>
       {thank ? (
         <div className="text-center">
-          <h1 className="mx-10 mt-20 font-bold ">
-            We are glad to invite you to the opening for isystem new branch in
-            Abdoun on the 27th of October at 6:00 pm
+          <h1 className="mx-10 mt-20 text-[20px] ">
+          Good luck, see you at the opening event of iSystem Abdoun new branch on the 27th of October at 6 PM
           </h1>
-          <div className="h-screen w-full bg-cover bg-[url(https://i.imgur.com/bUOTuQW.jpeg)] lg:-ml-10 -mt-10"></div>
+          <Image src={products} width="1200px" height="500px"/>
+          {/* <div className="h-screen w-full bg-cover bg-[url(https://i.imgur.com/bUOTuQW.jpeg)] lg:-ml-10 -mt-10 "></div> */}
         </div>
       ) : (
-        <div className=" h-[70vh] w-full bg-cover bg-[url(https://i.imgur.com/exgCd94.png)] flex justify-center">
+        <div className=" h-[100vh] w-full bg-cover bg-[url(https://i.imgur.com/exgCd94.png)] flex justify-center ">
           <Contact setThank={setThank} setPhone={setPhone} phone={phone}/>
         </div>
       )}
