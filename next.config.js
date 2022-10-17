@@ -2,25 +2,38 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+};
 
-module.exports ={
+module.exports = {
   images: {
-    domains: ['i.imgur.com', 'images.unsplash.com'],
+    domains: ["i.imgur.com", "images.unsplash.com"],
   },
-  async rewrites() {
+
+  async headers() {
 
     return [
 
       {
 
-        source: '/api/:path*',
+        // matching all API routes
 
-        destination: 'https://josmsservice.com/:path*',
+        source: "/api/:path*",
 
-      },
+        headers: [
+
+          { key: "Access-Control-Allow-Credentials", value: "true" },
+
+          { key: "Access-Control-Allow-Origin", value: "*" },
+
+          { key: "Access-Control-Allow-Methods", value: "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+
+          { key: "Access-Control-Allow-Headers", value: "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" },
+
+        ]
+
+      }
 
     ]
 
-  },
-}
+  }
+};
