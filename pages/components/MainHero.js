@@ -9,7 +9,6 @@ const Hero = () => {
   const [thank, setThank] = useState(false);
   const [phone, setPhone] = useState("")
 
-  console.log(phone)
   
   return (
     <>
@@ -19,7 +18,6 @@ const Hero = () => {
           Good luck, see you at the opening event of iSystem Abdoun new branch on the 27th of October at 6 PM
           </h1>
           <Image src={products} width="1200px" height="500px"/>
-          {/* <div className="h-screen w-full bg-cover bg-[url(https://i.imgur.com/bUOTuQW.jpeg)] lg:-ml-10 -mt-10 "></div> */}
         </div>
       ) : (
         <div className=" h-[100vh] w-full bg-cover bg-[url(https://i.imgur.com/exgCd94.png)] flex justify-center ">
