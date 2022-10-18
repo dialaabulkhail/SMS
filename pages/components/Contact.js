@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 
@@ -7,24 +7,16 @@ const initialValues = {
   name: "",
   email: "",
   phone: "",
-
 };
 
 
 const Contact = ({ setThank, setPhone, phone }) => {
+
+  // inputs saved from the form to be moved to google sheets - can be replaced or repmoved
   const [inputs, setInputs] = useState(initialValues)
+  
 
-  // const handleInputChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setInputs({
-  //     ...inputs,
-  //     [name]: value,
-  //   });
-
-    
-  // };
-
-
+// function responsible for sending sms and redirecting to the thank page
   const fetch = () => {
     axios
       .get(
@@ -53,29 +45,46 @@ const Contact = ({ setThank, setPhone, phone }) => {
 
 
   const handleSubmit = () =>{
+    // google sheets data
+    const sheetData = {
+      Name: inputs.name,
+      Email: inputs.email,
+      Phone: inputs.phone
+    }
+
+    // validation of the phone number type
     const phoneNumber = document.querySelector("#phone").value
 
     if(phoneNumber < 0){
       alert("Please enetr a valid number!")
     }
+
+    // calling the function that sends an sms after validation
   else if(phoneNumber.match(/^[0-9]+$/) != null){
 fetch()
+
+// seding to google sheets
+axios.post('https://sheet.best/api/sheets/2226a556-0a3f-42d6-ae4b-220ee39f9d2d', sheetData).then((response)=>{
+  console.log(response)
+}).catch((error)=>{
+  console.log(error)
+})
   }else{
     alert("Please enter only numbers!")
   }
   }
 
-console.log(inputs)
+
   
   return (
-    <div className="items-center overflow-x-none">
+    <div className="items-center overflow-x-none z-[40]">
       <h1 className="mx-10 text-[20px] text-white mt-14 font-bold">
         You are a few steps away from winning an iPhone14, please fill in the
         below information to enter the draw!
       </h1>
 
       <div className="flex items-center justify-center ">
-        <form onSubmit={handleSubmit} className="mt-5">
+        <form onSubmit={handleSubmit} method="post"  className="mt-5">
           <label className="flex py-2 text-white font-bold">Name</label>
           <input
             required="true"

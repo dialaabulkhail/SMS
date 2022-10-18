@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="h-16 bg-darkBlue ">
+    <div className=" bg-darkBlue h-20">
       <div className="text-center">
         <Link href="/Main">
-          <Image src={Logo} className="cursor-pointer" />
+          <Image src={Logo} className="cursor-pointer w-[20px] h-[20px]" width={200} height={75} />
         </Link>
       </div>
     </div>
