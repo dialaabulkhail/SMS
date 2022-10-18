@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
       ) : (
         <div className=" h-screen w-full bg-cover bg-[url(https://storage.cloudconvert.com/tasks/ac23d26c-3900-4749-9775-0b939eeaa46c/iphone_14_banner.webp?AWSAccessKeyId=cloudconvert-production&Expires=1666168187&Signature=289yESPDy7wXXDIfWurrykbh39M%3D&response-content-disposition=inline%3B%20filename%3D%22iphone_14_banner.webp%22&response-content-type=image%2Fwebp)] flex bg-fixed bg-center flex items-center justify-center ">
-            <div className='absolute top-20 left-0 right-0 bottom-0 bg-black/50 h-screen' />
+          <div className='absolute top-20 left-0 right-0 bottom-0 bg-black/50 h-screen' />
           <Contact setThank={setThank} setPhone={setPhone} phone={phone}/>
         </div>
       )}

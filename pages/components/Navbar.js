@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className=" bg-darkBlue h-20">
       <div className="text-center">
         <Link href="/Main">
-          <Image src={Logo} className="cursor-pointer w-[20px] h-[20px]" width={200} height={75} />
+          <Image src={Logo} className="cursor-pointer" width={200} height={75}  />
         </Link>
       </div>
     </div>
