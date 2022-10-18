@@ -6,7 +6,7 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ["i.imgur.com", "images.unsplash.com"],
+    domains: ["i.imgur.com", "images.unsplash.com", 'apple.com'],
   },
 
   // async headers() {
