@@ -89,24 +89,24 @@ const Contact = ({ setThank, setPhone, phone }) => {
             value={inputs.name}
             onChange={handleChange}
             type="text"
-            className="px-6 py-1 mx-3 text-black underline border-b  focus:border-none focus:ring-0 focus:outline-none text-[18px]"
+            className="px-6 py-1 mx-3 text-white border-b bg-transparent focus:ring-0 focus:outline-none text-[18px]"
           />
 
-          <label className="py-2 text-white flex font-bold">Email</label>
+          <label className="py-1 text-white flex font-bold mt-10">Email</label>
           <input
             required="true"
             name="email"
             value={inputs.email}
             onChange={handleChange}
             type="email"
-            className="px-6 py-1 mx-3 text-black underline border-b  focus:border-none focus:ring-0 focus:outline-none text-[18px]"
+            className="px-6 py-1 mx-3 text-white border-b bg-transparent focus:ring-0 focus:outline-none text-[18px] focus:bg-transparent "
           />
 
-          <label className=" py-2 text-white flex font-bold">
+          <label className=" py-1 text-white flex font-bold mt-10">
             Phone Number
           </label>
           <div className="flex">
-            <div className="px-1 py-1 ml-3 text-gray-700 bg-gray-200 ">
+            <div className=" py-1 text-white  ">
               +962
             </div>
             <input
@@ -116,7 +116,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
               // value={inputs.phone || ""}
               onChange={handleChange}
               type="tel"
-              className="  text-black underline border-bfocus:border-none focus:ring-0 focus:outline-none text-[18px]"
+              className="px-2 py-1 mx-3 text-white border-b bg-transparent focus:ring-0 focus:outline-none text-[18px]"
             />
           </div>
 
