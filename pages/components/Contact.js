@@ -64,7 +64,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
 fetch()
 
 // seding to google sheets
-axios.post('https://sheet.best/api/sheets/2226a556-0a3f-42d6-ae4b-220ee39f9d2d', sheetData).then((response)=>{
+axios.post('https://sheet.best/api/sheets/75c35fca-1594-4662-87eb-501b6f4c9a10', sheetData).then((response)=>{
   console.log(response)
 }).catch((error)=>{
   console.log(error)
