@@ -76,7 +76,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
 
   return (
     <div className="items-center overflow-x-none z-[40]">
-      <h1 className="mx-10 text-[20px] text-white mt-14 font-bold">
+      <h1 className="mx-10 text-[20px] text-white mt-14 font-bold text-center">
       You are a few steps away from winning an iPhone14; please fill in the below information to enter the draw for winning iPhone 14 from iSystem!
       </h1>
 

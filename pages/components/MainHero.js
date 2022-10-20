@@ -14,7 +14,7 @@ const Hero = () => {
     <>
       {thank ? (
         <div className="text-center">
-          <h1 className="mx-10 mt-20 text-[20px] font-bold">
+          <h1 className="mx-10 mt-20 text-[20px] font-bold text-center">
             Congrats! You entered the draw to win iPhone 14 from iSystem; join
             us at our new Abdoun branch on the 27th of October 6:00PM to
             announce the winner at the opening.
@@ -33,7 +33,7 @@ const Hero = () => {
           </div>
         </div>
       ) : (
-        <div className=" h-screen w-full bg-cover bg-[url(https://storage.cloudconvert.com/tasks/ac23d26c-3900-4749-9775-0b939eeaa46c/iphone_14_banner.webp?AWSAccessKeyId=cloudconvert-production&Expires=1666168187&Signature=289yESPDy7wXXDIfWurrykbh39M%3D&response-content-disposition=inline%3B%20filename%3D%22iphone_14_banner.webp%22&response-content-type=image%2Fwebp)] flex bg-fixed bg-center flex items-center justify-center ">
+        <div className=" h-screen w-full bg-cover bg-[url(https://i.ibb.co/Nr09Nv0/iphone-14-banner-1.webp)] flex bg-fixed bg-center flex items-center justify-center ">
           <div className="absolute top-16 left-0 right-0 bottom-0 bg-black/50 h-screen" />
           <Contact setThank={setThank} setPhone={setPhone} phone={phone} />
         </div>
