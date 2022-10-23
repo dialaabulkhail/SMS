@@ -75,55 +75,58 @@ const Contact = ({ setThank, setPhone, phone }) => {
   };
 
   return (
-    <div className="items-center overflow-x-none z-[40]">
-      <h1 className="mx-10 text-[20px] text-white mt-14 font-bold text-center">
-      You are a few steps away from winning an iPhone14; please fill in the below information to enter the draw for winning iPhone 14 from iSystem!
+    <div className="items-center overflow-x-none z-[40] overflow-y-none">
+      <h1 className="mx-10 text-[20px] text-white  font-bold text-center">
+        You are a few steps away from winning iPhone 14.
+      </h1>
+      <h1 className="mx-10 text-[20px] text-white mt-6 font-bold text-center mb-14">
+        Please fill the below information to enter the draw.
       </h1>
 
-      <div className="flex items-center justify-center ">
-        <form onSubmit={handleSubmit} method="post" className="mt-5">
-          <label className="flex py-2 text-white font-bold">Name</label>
+      <div className="flex items-center justify-center w-full">
+        <form onSubmit={handleSubmit} method="post" className="">
+          <label className="flex py-2 font-bold text-white">Your Name*</label>
           <input
             required="true"
             name="name"
             value={inputs.name}
             onChange={handleChange}
             type="text"
-            className="px-6 py-1 mx-3 text-white border-b bg-transparent focus:ring-0 focus:outline-none text-[18px]"
+            className="w-full py-1 px-1  border-b  focus:ring-0 focus:outline-none text-[18px] rounded-sm"
           />
 
-          <label className="py-1 text-white flex font-bold mt-10">Email</label>
+          <label className="flex py-1 mt-5 font-bold text-white ">
+            Phone Number*
+          </label>
+          {/* <div className="flex"> */}
+          {/* <div className="py-1 text-white ">
+              +962
+            </div> */}
+          <input
+            id="phone"
+            required="true"
+            name="phone"
+            // value={inputs.phone || ""}
+            onChange={handleChange}
+            type="tel"
+            className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm"
+          />
+          {/* </div> */}
+
+          <label className="flex py-1 mt-5 font-bold text-white">Email*</label>
           <input
             required="true"
             name="email"
             value={inputs.email}
             onChange={handleChange}
             type="email"
-            className="px-6 py-1 mx-3 text-white border-b bg-transparent focus:ring-0 focus:outline-none text-[18px] focus:bg-transparent "
+            className="w-full py-1 px-1 border-b  focus:ring-0 focus:outline-none text-[18px] rounded-sm "
           />
-
-          <label className=" py-1 text-white flex font-bold mt-10">
-            Phone Number
-          </label>
-          <div className="flex">
-            <div className=" py-1 text-white  ">
-              +962
-            </div>
-            <input
-              id="phone"
-              required="true"
-              name="phone"
-              // value={inputs.phone || ""}
-              onChange={handleChange}
-              type="tel"
-              className="px-2 py-1 mx-3 text-white border-b bg-transparent focus:ring-0 focus:outline-none text-[18px]"
-            />
-          </div>
 
           <div className="flex justify-center mt-3">
             <button
               type="submit"
-              className="p-3 px-10 text-white duration-200 ease-in-out rounded-lg shadow bg-darkBlue hover:bg-darkBlue/50 mt-2"
+              className="p-3 px-10 mt-2 text-white duration-200 ease-in-out  shadow bg-[#2b498e] hover:bg-[#2b498e]/50"
             >
               Submit
             </button>

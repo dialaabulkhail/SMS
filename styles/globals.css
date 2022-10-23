@@ -1,9 +1,11 @@
+
+
 html,
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 
 a {
@@ -25,6 +27,14 @@ a {
   }
 }
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'MyFont';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('/fonts/MY-FONT.woff') format('woff');
+}

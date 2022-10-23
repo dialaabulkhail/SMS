@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className=" bg-darkBlue h-16">
+    <div className=" bg-[#2b498e] h-16">
       <div className="text-center">
         <Link href="/Main">
           <Image src={Logo} className="cursor-pointer"   />
