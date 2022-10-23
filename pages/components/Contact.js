@@ -98,10 +98,10 @@ const Contact = ({ setThank, setPhone, phone }) => {
           <label className="flex py-1 mt-5 font-bold text-white ">
             Phone Number*
           </label>
-          {/* <div className="flex"> */}
-          {/* <div className="py-1 text-white ">
+          <div className="flex">
+          <div className="py-1 bg-white ">
               +962
-            </div> */}
+            </div>
           <input
             id="phone"
             required="true"
@@ -111,7 +111,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
             type="tel"
             className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm"
           />
-          {/* </div> */}
+          </div>
 
           <label className="flex py-1 mt-5 font-bold text-white">Email*</label>
           <input
