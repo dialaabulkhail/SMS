@@ -76,7 +76,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
 
   return (
     <div className="items-center overflow-x-none z-[40] overflow-y-none">
-      <h1 className="mx-10 text-[20px] text-white  font-bold text-center">
+      <h1 className="mx-10 text-[20px] text-white mt-10 font-bold text-center">
         You are a few steps away from winning iPhone 14.
       </h1>
       <h1 className="mx-10 text-[20px] text-white mt-6 font-bold text-center mb-14">
@@ -92,25 +92,23 @@ const Contact = ({ setThank, setPhone, phone }) => {
             value={inputs.name}
             onChange={handleChange}
             type="text"
-            className="w-full py-1 px-1  border-b  focus:ring-0 focus:outline-none text-[18px] rounded-sm"
+            className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm bg-white"
           />
 
           <label className="flex py-1 mt-5 font-bold text-white ">
             Phone Number*
           </label>
           <div className="flex">
-          <div className="py-1 bg-white ">
-              +962
-            </div>
-          <input
-            id="phone"
-            required="true"
-            name="phone"
-            // value={inputs.phone || ""}
-            onChange={handleChange}
-            type="tel"
-            className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm"
-          />
+            <div className="py-1 text-gray-700 bg-white">+962</div>
+            <input
+              id="phone"
+              required="true"
+              name="phone"
+              // value={inputs.phone || ""}
+              onChange={handleChange}
+              type="tel"
+              className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] bg-white"
+            />
           </div>
 
           <label className="flex py-1 mt-5 font-bold text-white">Email*</label>
@@ -120,13 +118,13 @@ const Contact = ({ setThank, setPhone, phone }) => {
             value={inputs.email}
             onChange={handleChange}
             type="email"
-            className="w-full py-1 px-1 border-b  focus:ring-0 focus:outline-none text-[18px] rounded-sm "
+            className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm bg-white"
           />
 
           <div className="flex justify-center mt-3">
             <button
               type="submit"
-              className="p-3 px-10 mt-2 text-white duration-200 ease-in-out  shadow bg-[#2b498e] hover:bg-[#2b498e]/50"
+              className="p-3 px-10 mt-2 text-white duration-200 ease-in-out shadow bg-[#2b498e] hover:bg-[#2b498e]/50"
             >
               Submit
             </button>
