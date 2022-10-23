@@ -7,7 +7,7 @@ import Link from "next/link";
 import Footer from "./Footer";
 
 const Hero = () => {
-  const [thank, setThank] = useState(false);
+  const [thank, setThank] = useState(true);
   const [phone, setPhone] = useState("");
 
 
@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
       ) : (
         <div className=" h-screen w-full bg-cover bg-[url(https://assets-prd.ignimgs.com/2022/09/07/14pro-1662575961382.jpg)]  bg-fixed bg-center flex items-center justify-center ">
-          <div className="absolute bottom-0 left-0 right-0 top-16 bg-black/50" />
+          <div className="absolute bottom-0 left-0 right-0 h-screen top-16 bg-black/50" />
           <Contact setThank={setThank} setPhone={setPhone} phone={phone} />
         </div>
       )}

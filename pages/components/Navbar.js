@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className=" bg-[#2b498e] h-16 fixed w-full z-[40]">
+    <div className=" bg-[#2b498e] h-16  ">
       <Link href="/Main">
         <Image src={Logo} className="cursor-pointer" />
       </Link>
