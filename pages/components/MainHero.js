@@ -7,7 +7,7 @@ import Link from "next/link";
 import Footer from "./Footer";
 
 const Hero = () => {
-  const [thank, setThank] = useState(true);
+  const [thank, setThank] = useState(false);
   const [phone, setPhone] = useState("");
 
 
