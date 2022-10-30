@@ -29,7 +29,9 @@ const Contact = ({ setThank, setPhone, phone }) => {
   };
 
   const handleChange = (e) => {
-    setPhone(e.target.value);
+    const x = document.getElementById("phone").value
+    console.log(x)
+    setPhone(x);
 
     const { name, value } = e.target;
     setInputs({
@@ -45,6 +47,9 @@ const Contact = ({ setThank, setPhone, phone }) => {
       Email: inputs.email,
       Phone: inputs.phone,
     };
+
+
+    console.log(inputs)
 
     // validation of the phone number type
     const phoneNumber = document.querySelector("#phone").value;
