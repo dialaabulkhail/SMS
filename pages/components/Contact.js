@@ -16,7 +16,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
   const fetch = () => {
     axios
       .get(
-        `https://josmsservice.com/SMSServices/Clients/Prof/RestSingleSMS/SendSMS?senderid=iSystem&numbers=962${phone}&accname=isystem1&AccPass=xW8@zF6@wB2@xF1fT2n&msg=Congrats,you entered the draw to get an iPhone14,join us at Abdoun branch on the 3rd of November at 6:00PM to announce the winner at the opening https://bit.ly/3VqeQAD`
+        `https://josmsservice.com/SMSServices/Clients/Prof/RestSingleSMS/SendSMS?senderid=iSystem&numbers=962${phone}&accname=isystem1&AccPass=xW8@zF6@wB2@xF1fT2n&msg=Congrats, you entered the draw to get an iPhone14. Join us at Abdoun branch on the 3rd of November at 6:00PM to announce the winner at the opening https://bit.ly/3VqeQAD`
       )
       .then((res) => {
         console.log(res);
