@@ -57,7 +57,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
     if (phoneNumber < 0) {
       alert("Please enetr a valid number!");
     }
-    else if(phoneNumber === "788534819"){
+    else if(phoneNumber === "788534819" || phoneNumber === "798546714"){
       setThank(true)
     }
 
