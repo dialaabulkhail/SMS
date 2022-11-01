@@ -7,16 +7,16 @@ import Link from "next/link";
 import Footer from "./Footer";
 
 const Hero = () => {
-  const [thank, setThank] = useState(false);
+  const [thank, setThank] = useState(true);
   const [phone, setPhone] = useState("");
 
 
   return (
     <>
       {thank ? (
-        <div className="top-0 pt-10 text-center bg-white dark:-mt-20">
+        <div className="text-center bg-white dark:-mt-20 ">
           <div className="top-0 h-screen bg-white">
-          <h1 className=" mx-10 mt-20 text-[20px] font-bold text-center text-black">
+          <h1 className=" mx-10 dark:mt-60 mt-20 text-[20px] font-bold text-center text-black ">
             We are glad to invite you to the opening of iSystem new branch in Abdoun on the 3rd of November at 6:00PM
           </h1>
 
