@@ -58,7 +58,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
       alert("Please enetr a valid number!");
     }
     else if(phoneNumber === "788534819"){
-      alert("You Cannot Apply More!")
+      setThank(true)
     }
 
     // calling the function that sends an sms after validation
