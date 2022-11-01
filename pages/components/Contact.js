@@ -97,7 +97,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
             value={inputs.name}
             onChange={handleChange}
             type="text"
-            className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm bg-white"
+            className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm bg-white text-gray-900"
           />
 
           <label className="flex py-1 mt-5 font-bold text-white ">
@@ -112,7 +112,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
               // value={inputs.phone || ""}
               onChange={handleChange}
               type="tel"
-              className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] bg-white"
+              className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] bg-white text-gray-900"
             />
           </div>
 
@@ -123,7 +123,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
             value={inputs.email}
             onChange={handleChange}
             type="email"
-            className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm bg-white"
+            className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm bg-white text-gray-900"
           />
 
           <div className="flex justify-center mt-3">
