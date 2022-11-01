@@ -15,7 +15,7 @@ const Hero = () => {
     <>
       {thank ? (
         <div className="text-center bg-white">
-          <div className="h-screen">
+          <div className="h-screen bg-white">
           <h1 className=" mx-10 mt-20 text-[20px] font-bold text-center text-black">
             We are glad to invite you to the opening of iSystem new branch in Abdoun on the 3rd of November at 6:00PM
           </h1>
