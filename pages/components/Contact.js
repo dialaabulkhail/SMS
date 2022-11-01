@@ -104,7 +104,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
             Phone Number*
           </label>
           <div className="flex">
-            <div className="py-1 text-gray-700 bg-white">+962</div>
+            <div className="py-1 text-gray-700 bg-white text-[18px]">+962</div>
             <input
               id="phone"
               required="true"
