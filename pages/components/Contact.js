@@ -80,7 +80,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
   };
 
   return (
-    <div className="items-center overflow-x-none z-[40] overflow-y-none bg-white">
+    <div className="items-center overflow-x-none z-[40] overflow-y-none ">
       <h1 className="mx-10 text-[20px] text-white mt-10 font-bold text-center">
         You are a few steps away from winning iPhone 14.
       </h1>
