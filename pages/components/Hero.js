@@ -7,7 +7,7 @@ import Link from "next/link";
 import Footer from "./Footer";
 
 const Hero = () => {
-  const [thank, setThank] = useState(false);
+  const [thank, setThank] = useState(true);
   const [phone, setPhone] = useState("");
 
 
@@ -20,7 +20,7 @@ const Hero = () => {
             We are glad to invite you to the opening of iSystem new branch in Abdoun on the 3rd of November at 6:00PM
           </h1>
 
-          <Image src={products} width="1200px" height="400px" />
+          <Image src={products}/>
           <div>
             <Link href="https://goo.gl/maps/JyXWJ9eXMMz2yJh77">
               <p className="text-[#2b498e] text-[20px] font-bold cursor-pointer hover:text-blue-300 text-center lg:-mt-20 lg:relative">
