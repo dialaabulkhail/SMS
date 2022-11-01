@@ -14,9 +14,9 @@ const Hero = () => {
   return (
     <>
       {thank ? (
-        <div className="-mt-20 text-center bg-white">
+        <div className="h-screen pt-20 text-center bg-white">
           <div className="top-0 h-screen bg-white">
-          <h1 className=" mx-10 mt-60  text-[20px] font-bold text-center text-black dark:bg-white">
+          <h1 className=" mx-10  text-[20px] font-bold text-center text-black bg-white">
             We are glad to invite you to the opening of iSystem new branch in Abdoun on the 3rd of November at 6:00PM
           </h1>
 
@@ -34,10 +34,12 @@ const Hero = () => {
           <Footer />
         </div>
       ) : (
-        <div className=" h-screen w-full bg-cover bg-[url(https://assets-prd.ignimgs.com/2022/09/07/14pro-1662575961382.jpg)]  bg-fixed bg-center flex items-center justify-center ">
+        
+        <div className=" h-screen w-full bg-cover bg-[url(https://assets-prd.ignimgs.com/2022/09/07/14pro-1662575961382.jpg)] bg-fixed bg-center flex items-center justify-center ">
           <div className="absolute bottom-0 left-0 right-0 h-screen top-16 bg-black/50" />
           <Contact setThank={setThank} setPhone={setPhone} phone={phone} />
         </div>
+      
       )}
     </>
   );
