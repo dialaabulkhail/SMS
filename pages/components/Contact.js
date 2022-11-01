@@ -112,7 +112,7 @@ const Contact = ({ setThank, setPhone, phone }) => {
               // value={inputs.phone || ""}
               onChange={handleChange}
               type="tel"
-              className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] bg-white text-gray-900"
+              className="w-full py-1 px-1 border-b focus:ring-0 focus:outline-none text-[18px] rounded-sm bg-white text-gray-900"
             />
           </div>
 
