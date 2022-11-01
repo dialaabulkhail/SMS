@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
       ) : (
         <div className=" h-screen w-full bg-cover bg-[url(https://assets-prd.ignimgs.com/2022/09/07/14pro-1662575961382.jpg)]  bg-fixed bg-center flex items-center justify-center ">
-          <div className="absolute bottom-0 left-0 right-0 h-screen top-16 bg-black/50" />
+          <div className="bottom-0 left-0 right-0 h-screen  bg-black/50" />
           <Contact setThank={setThank} setPhone={setPhone} phone={phone} />
         </div>
       )}
